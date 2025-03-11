@@ -25,9 +25,33 @@ This Node.js project downloads the highest quality video (without audio) and aud
     yarn
     ```
 
-3.  **Ensure ffmpeg is installed:**
+3.  **Install FFmpeg:**
 
-    This project uses ffmpeg for merging video and audio. Make sure you have ffmpeg installed and available in your system's PATH. You can download it from the official ffmpeg website: [https://ffmpeg.org/](https://ffmpeg.org/)
+    This project uses ffmpeg for merging video and audio. Make sure you have ffmpeg installed and available in your system's PATH.
+
+    ✅ **Step 1: Install FFmpeg**
+
+    If you haven’t installed FFmpeg yet, download and install it:
+
+    1.  Go to: [https://ffmpeg.org/download.html](https://ffmpeg.org/download.html)
+    2.  Download the Windows build (ffmpeg-git-full.7z or .zip).
+    3.  Extract the files (e.g., C:\ffmpeg).
+    4.  Inside C:\ffmpeg\bin, you should see ffmpeg.exe.
+
+    ✅ **Step 2: Add FFmpeg to System Path**
+
+    1.  Open Start Menu → Search for "Environment Variables" and open it.
+    2.  Under System Variables, find Path and Edit it.
+    3.  Click New, and add the path to ffmpeg.exe, e.g.: C:\ffmpeg\bin
+    4.  Click OK, then Apply, and restart your terminal.
+
+    ✅ **Step 3: Verify Installation**
+
+    Run this in your terminal (Command Prompt or PowerShell): 
+    ```bash
+    ffmpeg -version
+    ```
+    If it prints FFmpeg details, it's installed correctly.
 
 ## Usage
 
